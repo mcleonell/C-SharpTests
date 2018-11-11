@@ -27,7 +27,7 @@ namespace CreateUserAndLoginTest.Wpf
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            string _username = txtUsername.Text.ToLower();
+            string _username = txtUsername.Text;
             string _password = txtPassword.Text;
 
             User user = new User();

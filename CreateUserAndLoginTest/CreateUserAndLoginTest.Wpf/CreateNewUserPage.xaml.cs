@@ -29,11 +29,21 @@ namespace CreateUserAndLoginTest.Wpf
         {
             string newUsername = txtUsername.Text.ToString();
             string newUserpassword = txtPassword.Text.ToString();
+            string newUseremail = txtEmail.Text.ToString();
 
 
 
             User user = new User();
-            user.CreateNewUser(newUsername,newUserpassword);
+            if(user.CreateNewUser(newUsername,newUserpassword,newUseremail)== false)
+            {
+                MessageBox.Show("username already taken");
+            }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Content = mainWindow;
         }
     }
 }
