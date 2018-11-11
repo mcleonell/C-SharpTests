@@ -24,5 +24,16 @@ namespace CreateUserAndLoginTest.Wpf
         {
             InitializeComponent();
         }
+
+        private void lblCreate_Click(object sender, RoutedEventArgs e)
+        {
+            string newUsername = txtUsername.Text.ToString();
+            string newUserpassword = txtPassword.Text.ToString();
+
+
+
+            User user = new User();
+            user.CreateNewUser(newUsername,newUserpassword);
+        }
     }
 }

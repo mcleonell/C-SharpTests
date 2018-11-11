@@ -13,7 +13,7 @@
         <Label x:Name="lblPasswordText" Content="Password:" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="100,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="100,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
-        <Button x:Name="lblCreate" Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="145,118,0,0"/>
+        <Button x:Name="lblCreate" Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="145,118,0,0" Click="lblCreate_Click"/>
         <Label x:Name="lblEmail" Content="Email:" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="100,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
         <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" FontSize="12
