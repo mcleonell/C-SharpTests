@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CreateUserAndLoginTest.Wpf.Properties {
+namespace ExamenOefenen.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,9 +26,11 @@ namespace CreateUserAndLoginTest.Wpf.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        public string ConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=ExamenOefenen;Integrated Security=True" +
+            "")]
+        public string connectionString {
             get {
-                return ((string)(this["ConnectionString"]));
+                return ((string)(this["connectionString"]));
             }
         }
     }
