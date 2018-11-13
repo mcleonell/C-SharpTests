@@ -77,6 +77,7 @@ namespace CreateUserAndLoginTest.Wpf
             if(dbAcces.SetNewUser(newUsername, newUserpassword, newUseremail) == false)
             {
                 return false;
+                
             }
             else
             {

@@ -6,12 +6,15 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+
 
 namespace CreateUserAndLoginTest.Wpf
 {
     class Database
     {
         #region connection
+        string connectionstring = Properties.Settings.Default.connectionString;
         static bool connected = false;
         SqlConnection cnn;
         #endregion
@@ -28,8 +31,8 @@ namespace CreateUserAndLoginTest.Wpf
         {
 
 
-            string connectionstring;
-            connectionstring = @"Data Source = timothy\sqlexpress; Initial Catalog = Test; Integrated Security = True";
+
+            
             cnn = new SqlConnection(connectionstring);
             cnn.Open();
 

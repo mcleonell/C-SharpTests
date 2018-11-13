@@ -24,6 +24,12 @@ namespace CreateUserAndLoginTest.Wpf
         {
             InitializeComponent();
         }
+        void ClearTextBoxes()
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+        }
 
         private void lblCreate_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +43,12 @@ namespace CreateUserAndLoginTest.Wpf
             if(user.CreateNewUser(newUsername,newUserpassword,newUseremail)== false)
             {
                 MessageBox.Show("username already taken");
+            }
+            else
+            {
+                MessageBox.Show("Welcome " + newUsername + "!");
+                ClearTextBoxes();
+
             }
         }
 
